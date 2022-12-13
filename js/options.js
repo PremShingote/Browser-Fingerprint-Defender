@@ -326,7 +326,7 @@
                         return (0, n.wg)(), (0, n.j4)(d, null, {
                             label: (0, n.w5)((() => [(0, n._)("label", {
                                 for: e.randomId
-                            }, (0, r.zw)(e.i18n("enable_switcher", "Enable Switcher")), 9, W)])),
+                            }, (0, r.zw)(e.i18n("enable_switcher", "Enable Browser Fingerprint Defender")), 9, W)])),
                             toggle: (0, n.w5)((() => [(0, n.Wm)(l, {
                                 id: e.randomId,
                                 checked: e.$store.state.settings.enabled,
@@ -862,7 +862,7 @@
                         text: e.i18n("save_changes", "Save changes"),
                         pulse: !0,
                         onClick: e.saveChanges
-                    }, null, 8, ["text", "onClick"]))])]), (0, n._)("aside", null, ["general" === e.activePage ? ((0, n.wg)(), (0, n.iD)("div", d, [(0, n._)("h1", null, (0, r.zw)(e.i18n("general_settings", "General settings")), 1), (0, n._)("p", null, (0, r.zw)(e.i18n("general_settings_hint", "Change the behavior of the switcher to best fit your needs")) + ":", 1), (0, n._)("ul", null, [(0, n.Wm)(_), (0, n.Wm)(x), (0, n.Wm)(k), (0, n.Wm)(y), (0, n.Wm)(U), (0, n.Wm)(Z)])])) : "generator" === e.activePage ? ((0, n.wg)(), (0, n.iD)("div", c, [(0, n._)("h1", null, (0, r.zw)(e.i18n("generator_settings", "Generator settings")), 1), (0, n._)("p", null, (0, r.zw)(e.i18n("generator_settings_hint", "Here you can change the agent switching behavior")) + ":", 1), (0, n.Wm)(S)])) : ((0, n.wg)(), (0, n.iD)("div", g, m))])]), (0, n._)("footer", null, [(0, n._)("div", p, [(0, n.Wm)(z)])])])
+                    }, null, 8, ["text", "onClick"]))])]), (0, n._)("aside", null, ["general" === e.activePage ? ((0, n.wg)(), (0, n.iD)("div", d, [(0, n._)("h1", null, (0, r.zw)(e.i18n("general_settings", "General settings")), 1), (0, n._)("p", null, (0, r.zw)(e.i18n("general_settings_hint", "Change the behavior of the Browser Fingerprint Defender to best fit your needs")) + ":", 1), (0, n._)("ul", null, [(0, n.Wm)(_), (0, n.Wm)(x), (0, n.Wm)(k), (0, n.Wm)(y), (0, n.Wm)(U), (0, n.Wm)(Z)])])) : "generator" === e.activePage ? ((0, n.wg)(), (0, n.iD)("div", c, [(0, n._)("h1", null, (0, r.zw)(e.i18n("generator_settings", "Generator settings")), 1), (0, n._)("p", null, (0, r.zw)(e.i18n("generator_settings_hint", "Here you can change the agent switching behavior")) + ":", 1), (0, n.Wm)(S)])) : ((0, n.wg)(), (0, n.iD)("div", g, m))])]), (0, n._)("footer", null, [(0, n._)("div", p, [(0, n.Wm)(z)])])])
                 }],
                 ["__scopeId", "data-v-5d25cb31"]
             ]);
