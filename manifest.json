@@ -1,0 +1,57 @@
+{
+  // "update_url": "https://github.com/PremShingote/Browser-Fingerprint-Defender/",
+  "manifest_version": 2,
+  "name": "Browser Fingerprint Defender", // Name of the extension
+  "version": "1.0",
+  "author": "https://github.com/PremShingote/",
+  "homepage_url": "https://github.com/PremShingote/Browser-Fingerprint-Defender/",
+  "description": "Browser Fingerprint Defender protect the users online privacy by defending against fingerprinting websites by providing fake system parameters.", //Description of extension
+  "icons": {
+    "16": "icons/logo/16.png",
+    "48": "icons/logo/48.png",
+    "128": "icons/logo/128.png"
+  },
+  "minimum_chrome_version": "49.0",
+  "incognito": "spanning",
+  "browser_action": {
+    "default_icon": "icons/logo/48.png",
+    "default_popup": "popup.html",
+    "default_title": "__MSG_manifest_action_default_title__"
+  },
+  "background": {
+    "page": "background.html",
+    "persistent": true
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "all_frames": true,
+      "run_at": "document_start",
+      "js": [
+        "js/content-script.js"
+      ]
+    }
+  ],
+  "permissions": [ //Provided following permissions for extension
+    "tabs",
+    "storage",
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>"
+
+  ],
+  "commands": {
+    "renew-useragent": {
+      "description": "__MSG_manifest_command_renew_useragent__",
+      "suggested_key": {
+        "default": "Ctrl+Shift+U" // Shortcut key to Renew the user agent
+      }
+    }
+  }
+}
